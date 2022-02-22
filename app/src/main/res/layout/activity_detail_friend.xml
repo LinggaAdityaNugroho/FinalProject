@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="friend"
+            type="com.example.finalproject.room.UserEntity" />
+
+    </data>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".detail.DetailFriendActivity">
+
+        <LinearLayout
+            android:id="@+id/ln_atas"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text='@{friend.name}'
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tv_photo_detail"
+                imageUrl='@{friend.photo}'
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/placeholder" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_fav_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_220sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:onClick="onClick"
+            android:src='@{friend.likeByYou ? @drawable/ic_baseline_favorite : @drawable/ic_baseline_favorite_border}' />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ln_atas"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_school_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{friend.school == null ? "school is empty" : friend.school}'
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/description"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_description_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{friend.description == null ? "description is empty" : friend.description}'
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

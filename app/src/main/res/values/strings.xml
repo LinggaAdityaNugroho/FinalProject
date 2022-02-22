@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="error">Error</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_to_myfriends">Welcome to MyFriends</string>
+    <string name="name">Name</string>
+    <string name="form_tidak_boleh_kosong">The form cannot be empty</string>
+    <string name="form_wajib_diisi">Form wajib diisi</string>
+    <string name="log_out">Log Out</string>
+    <string name="biometric">Biometric</string>
+    <string name="setting">Setting</string>
+    <string name="login_by_biometric">Login by Biometric</string>
+    <string name="biometric_auth">Biometric Auth</string>
+    <string name="angga_pambudi">Angga Pambudi</string>
+    <string name="this_image_friend">this image friend</string>
+    <string name="_123456">123456</string>
+    <string name="search_your_friend">Search your friend…</string>
+    <string name="your_all_friend">Your All Friend</string>
+    <string name="support_biometric">Support Biometric</string>
+    <string name="maaf_smartphone_anda_kentang">Maaf smarphone anda kentang dan tidak bisa menggunakan fitur Biometric</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="biometric_authetication">Biometric Authentication</string>
+    <string name="enter_biometric_credentials">Enter biometric credentials to proceed.</string>
+    <string name="input_your_fingerprint">Input your Fingerprint or FaceId to ensure it\'s you!</string>
+    <string name="cancel">Cancel</string>
+    <string name="biometric_tidak_sesuai">Biometric tidak sesuai</string>
+    <string name="registering">Registering…</string>
+    <string name="school">School</string>
+    <string name="change_your_name">Change your name..</string>
+    <string name="enter_your_school">Enter your school..</string>
+    <string name="description">Description</string>
+    <string name="tell_me_about_you">Tell me about you..</string>
+    <string name="save">Save</string>
+    <string name="urutkan_dari_likes_terbanyak">Urutkan dari likes terbanyak</string>
+    <string name="account">Account</string>
+    <string name="favorite">favorite</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="welcome">Welcome</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="register">Register</string>
+
+    <string-array name="spinner_school">
+        <item>SMK Negeri 11 Semarang</item>
+        <item>SMK Negeri 3 Kendal</item>
+        <item>SMK Wikrama Jepara</item>
+    </string-array>
+
+    <string-array name="filter_school">
+        <item>Semua</item>
+        <item>SMK Negeri 11 Semarang</item>
+        <item>SMK Negeri 3 Kendal</item>
+        <item>SMK Wikrama Jepara</item>
+    </string-array>
+
+</resources>
